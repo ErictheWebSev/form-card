@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body class="">
+  <div class="w-full h-screen flex flex-col bg-white sm:flex-row">
+    
+    <div class="w-[100%] sm:w-[30%] background h-[35%] sm:h-full p-8 relative">
+      <div class="">
+         <img class="image1" src="../images/bg-card-front.png" alt="" /> 
+         <div class="image1 absolute top-20 text-white">
+          <h2 class="h2" id="h2">0000 0000 0000 0000</h2>
+          <p class="p" id="p">Jane Appleseed</p>
+          <p class="p2" id="p2">00/00</p>
+         </div>
+    </div>
+      <div class="">
+      <img class="absolute w-80 -translate-y-5 translate-x-2 sm:bottom-[90%] sm:translate-y-[80rem]
+      sm:translate-x-12 sm:z-[1000]" src="../images/bg-card-back.png" alt="" />
+      <div class="image1">
+        <p class="p3" id="p3">000</p>
+      </div>
+      </div>
+      </div>
+    
+    <div class="w-[100%] sm:w-[70%] bg-white sm:h-full px-5 py-8 h-[75%] mt-20
+    overflow-x-hidden sm:translate-y-60 sm:mb-56">
+      
+      <form id="form" action="">
+        <div class="flex flex-col w-full">
+          <label for="card-holder" class="text-lg text-darkP font-semibold">CardHolder Name</label>
+          <input type="text" name="card-holder" id="card-holder" 
+          placeholder="Eg. Jane Appleseed" class="input" required/>
+        </div>
+        
+        <div class="flex flex-col">
+          <label for="card-number" class="text-lg text-darkP font-semibold">Card Number</label>
+          <input type="text" name="card-number" id="card-number"
+          placeholder="Eg. 1234 5678 9123 0000" class="input" required />
+        </div>
+        
+        <div class="flex w-full space-x-5">
+          <div class="flex flex-col">
+            <label for="exp-date" class="text-lg text-darkP font-semibold
+            translate-x-3">Exp. Date</label>
+            <input type="text" name="exp-date" id="exp-date"
+            placeholder="04" class="input" required />
+            </div>
+            
+          <div class="flex flex-col">
+            <label for="exp-date-y" class="text-lg text-darkP font-semibold
+            -translate-x-6">[MM / YY]</label>
+            <input type="text" name="exp-date-y" id="exp-date-y"
+            placeholder="Eg. 2023" class="input" required />
+            </div>
+          <div class="flex flex-col">
+            <label for="cvc" class="text-lg text-darkP font-semibold">CVC</label>
+            <input type="number" name="cvc" id="cvc"
+            placeholder="Eg. 123" class="input" required  />
+            </div>
+        </div>
+        <div class="error-message">
+        </div>
+        <button type="submit" class="w-full h-16 px-3 bg-darkP text-white font-bold rounded-lg">Confirm</button>
+      </form>
+    </div>
+  </div>
+<script src="js/main.js"></script>
+</body>
+</html>
