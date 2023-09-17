@@ -24,20 +24,20 @@
   }
   
   .h2 {
-    @apply sm:absolute text-center translate-x-1.5 translate-y-24 text-4xl
+    @apply sm:absolute text-center translate-x-1.5 translate-y-24 text-2xl
     sm:translate-y-12 sm:bottom-[15%] sm:translate-x-5
   }
   .p {
-    @apply sm:absolute text-left translate-x-2 translate-y-[8.5rem] text-lg
-    sm:translate-y-14 sm:bottom-[10%] sm:translate-x-5
+    @apply sm:absolute text-left translate-x-2 translate-y-[8rem] text-lg
+    sm:translate-y-10  sm:bottom-[10%] sm:translate-x-5
   }
   .p2 {
-    @apply sm:absolute text-right -translate-x-4 translate-y-24 text-lg
+    @apply sm:absolute text-right -translate-x-4 translate-y-[8rem] text-lg
     sm:bottom-[10%] sm:translate-x-60 sm:translate-y-16 
   }
   
   .p3 {
-     @apply sm:absolute text-right -translate-x-4 -translate-y-[10.8rem] text-sm text-white
+     @apply sm:absolute text-right -translate-x-4 -translate-y-[12rem] text-sm text-white
      font-semibold sm:top-[50%] sm:translate-y-20 sm:-translate-x-20 sm:right-0
   }
   
